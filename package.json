@@ -1,6 +1,6 @@
 {
   "name": "@furigana-react/furigana",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "A React component for displaying furigana (ruby text) with TypeScript support",
   "main": "dist/index.js",
