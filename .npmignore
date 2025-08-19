@@ -1,0 +1,18 @@
+# TypeScript declaration map files (not needed by package consumers)
+**/*.d.ts.map
+
+# Source map files (not needed in production)
+**/*.map
+
+# Development files
+src/
+.storybook/
+stories/
+
+# Build configuration
+vite.config.ts
+tsconfig.json
+eslint.config.js
+
+# Documentation development files
+*.md.backup

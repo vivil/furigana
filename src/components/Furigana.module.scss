@@ -1,0 +1,42 @@
+@use '../styles/variables' as vars;
+
+.furigana {
+  display: inline-block;
+  font-family: vars.$furigana-font-family;
+  color: vars.$furigana-text-color;
+  position: relative;
+}
+
+.text {
+  display: inline-block;
+}
+
+.ruby {
+  display: block;
+  font-size: vars.$furigana-ruby-font-size;
+  line-height: vars.$furigana-ruby-line-height;
+  color: vars.$furigana-ruby-color;
+  text-align: center;
+  margin: vars.$furigana-ruby-margin;
+  padding: vars.$furigana-ruby-padding;
+  position: absolute;
+  top: -1.2em;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.noRuby {
+  .ruby {
+    display: none;
+  }
+}
+
+// Ruby要素を使用する場合のフォールバック
+:global(ruby) {
+  rt {
+    font-size: vars.$furigana-ruby-font-size;
+    color: vars.$furigana-ruby-color;
+  }
+}
