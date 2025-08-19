@@ -1,4 +1,4 @@
-# @vivil/furigana
+# @furigana-react/furigana
 
 日本語テキストにふりがな（ルビ）を表示するReactコンポーネントライブラリ
 
@@ -19,7 +19,7 @@
 ## インストール
 
 ```bash
-npm install @vivil/furigana
+npm install @furigana-react/furigana
 ```
 
 ## 使用方法
@@ -27,7 +27,7 @@ npm install @vivil/furigana
 ### 基本的な使用方法
 
 ```tsx
-import { Furigana } from '@vivil/furigana';
+import { Furigana } from '@furigana-react/furigana';
 
 function App() {
   return (
@@ -95,7 +95,7 @@ function ToggleExample() {
 複数のFuriganaコンポーネントを一括で制御したい場合は、`FuriganaProvider`と`useFurigana`フックを使用します。
 
 ```tsx
-import { FuriganaProvider, useFurigana, Furigana } from '@vivil/furigana';
+import { FuriganaProvider, useFurigana, Furigana } from '@furigana-react/furigana';
 
 function ContextExample() {
   const { visible, toggleFurigana } = useFurigana();

@@ -1,5 +1,5 @@
 {
-  "name": "@vivil/furigana",
+  "name": "@furigana-react/furigana",
   "version": "1.0.0",
   "type": "module",
   "description": "A React component for displaying furigana (ruby text) with TypeScript support",
